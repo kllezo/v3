@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kllezo — Creative Brains. Automated Gains.</title>
+  <meta name="description"
+    content="Kllezo combines creative marketing, intelligent automation, and strategic systems to help businesses grow efficiently." />
+  <meta property="og:title" content="Kllezo — Creative Brains. Automated Gains." />
+  <meta property="og:description"
+    content="Creative marketing, intelligent automation, and strategic systems for modern businesses." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="/logo-kllezo.svg.png" />
+
+  <!-- Preload font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js" defer></script>
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <!-- Flapping Wing Cursor -->
+  <div class="cursor-wings" id="cursorDot">
+    <!-- Left Wing Image Base -->
+    <span class="cursor-wing cursor-wing--left"></span>
+    <!-- Right Wing Image Base -->
+    <span class="cursor-wing cursor-wing--right"></span>
+  </div>
+
+  <!-- Cursor Motion Trails Canvas -->
+  <canvas id="cursorTrails" class="cursor-trails"></canvas>
+
+  <!-- Page transition overlay -->
+  <div class="page-transition-overlay" id="pageTransition"></div>
+
+  <!-- Background shapes for parallax depth -->
+  <div class="bg-shapes" id="bgShapes">
+    <div class="bg-shape bg-shape--1"></div>
+    <div class="bg-shape bg-shape--2"></div>
+    <div class="bg-shape bg-shape--3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav">
+    <img src="/logo-kllezo.svg.png" alt="Kllezo" class="nav__logo" data-link="/" />
+    <div class="nav__links" id="navLinks">
+      <a href="#/" class="nav__link" data-route="/">Home</a>
+      <a href="#/services" class="nav__link" data-route="/services">Services</a>
+      <a href="#/about" class="nav__link" data-route="/about">About</a>
+      <a href="#/contact" class="nav__link" data-route="/contact">Connect</a>
+    </div>
+    <div class="nav__toggle" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- App mount -->
+  <main id="app"></main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
